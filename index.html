@@ -4,259 +4,124 @@
 	<meta name="viewport" content="width=devise-width, inital-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Tehnomart</title>
 </head>
 <body>
-  <div class="wrapper">
-    <header class="header">
-      <nav class="nav">
-        <div class="wrap__nav">
-          <div class="container">
-            <div class="main__menu">
-              <div class="search__form">
-            <input type="text" id="text-to-find" value="">
-            <input type="button" onclick="javascript: FindOnPage('text-to-find'); return false;" value="Искать"/>
-          </div>
-              <ul class="list__menu">
-                <!-- <li class="link__menu"><a href="#" class="link">главная</a></li> -->
-                <li class="link__menu"><a href="#" class="link">HTML</a></li>
-                <li class="link__menu"><a href="#" class="link">CSS</a></li>
-                <li class="link__menu"><a href="#" class="link">JAVASCRIPT</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-      <section class="content">
-        <div class="container">
-          <div class="gretitude">
-            <h1 class="gratitude__title">Отдельная благодарность участникам чата "Фрилансер по жизни"</h1>
-              <div class="icons__stars__flex">
-                  <div class="icon__star"> <img src="images/icons8-рождественская-звезда-48.png" alt=""></div>
-                  <div class="icon__star"><img src="images/icons8-рождественская-звезда-48.png" alt="#"></div>
-                  <div class="icon__star"><img src="images/icons8-рождественская-звезда-48.png" alt="#"></div>
-                  <div class="icon__star"><img src="images/icons8-рождественская-звезда-48.png" alt="#"></div>
-                  <div class="icon__star"><img src="images/icons8-рождественская-звезда-48.png" alt="#"></div>
-                  <div class="gratitude__name">Хачатуряну Алексею</div>
+	<div class="wrapper">
+     <header class="header">
+         <div class="header__top-panel">
+            <div class="container">
+              <div class="top__panel__flex">
+                <div class="top-panel__logo">Техномарт</div>
+                <div class="form__search__wrap">
+                    <button class="button__search">Поиск</button>
+                    <input type="text" class="input__search">
+                </div>
+                <div class="bookmark__wrap">
+                  <div class="bookmark">
+                    <i class="fa fa-bookmark fa-inverse"></i>
+                    <h3 class="bookmark__text">Закладки: 0</h3>
+                  </div>
+                  <div class="backet">
+                    <i class="fa fa-shopping-basket fa-inverse"></i>
+                    <h3 class="bookmark__text">Корзина: 0</h3>
+                  </div>
+                </div>
+                <div class="order__wrap">
+                    <h3 class="bookmark__text">Оформить заказ</h3>
+                </div>
               </div>
-          </div>
-          <!-- <div class="search__form">
-            <input type="text" id="text-to-find" value="">
-            <input type="button" onclick="javascript: FindOnPage('text-to-find'); return false;" value="Искать"/>
-          </div> -->
-          <div class="table-body">
-            <div class="tr-title">
-              <div class="td-title">Термин</div>
-              <div class="td-title">Перевод</div>
-              <div class="td-title">применение</div>
-              <div class="td-title">примечания</div>
             </div>
-            <div class="tr__item">
-              <div class="td__item"><code>abbr</code></div>
-              <div class="td__item">абревиатура</div>
-              <div class="td__item">в html <тег> для вствки абревиатуры </div>
-              <div class="td__item">закрывающий тег обязателен</div>
-            </div>
-
-            <div class="tr__item">
-              <div class="td__item">addendum</div>
-              <div class="td__item">добавление</div>
-              <div class="td__item">в js в качестве метода, например: add.element = добавить элемент</div>
-              <div class="td__item"></div>
-            </div>
-
-            <div class="tr__item">
-              <div class="td__item">application</div> <!-- Термин -->
-              <div class="td__item">приложение</div>  <!-- Перевод -->
-              <div class="td__item"></div>         <!--    Применение -->
-              <div class="td__item">сокращение - app</div>   <!-- Примечание -->
-            </div>
-            
-            <div class="tr__item">
-              <div class="td__item">API (Application Programming Interface)</div>
-              <div class="td__item">программный интерфейс приложения</div>
-              <div class="td__item">Каждый раз, когда пользователь посещает какую-либо страницу в сети, он взаимодействует с API удалённого сервера. API — это составляющая часть сервера, которая получает запросы и отправляет ответы.</div>
-              <div class="td__item"></div>
-            </div>
-
-            <div class="tr__item"> 
-              <div class="td__item">after</div>
-              <div class="td__item">после</div>
-              <div class="td__item"></div>
-              <div class="td__item"></div> 
-            </div>
-
-            <div class="tr__item"> 
-              <div class="td__item">a bit easier</div>
-              <div class="td__item">немного легче</div>
-              <div class="td__item"></div>
-              <div class="td__item"></div> 
-            </div>
-
-            <div class="tr__item"> 
-              <div class="td__item">a bit differently</div>
-              <div class="td__item">немного по-другому</div>
-              <div class="td__item"></div>
-              <div class="td__item"></div> 
-            </div>
-
-            <div class="tr__item"> 
-              <div class="td__item">a certain number</div>
-              <div class="td__item">некоторое число</div>
-              <div class="td__item"></div>
-              <div class="td__item"></div> 
-            </div>
-
-            <div class="tr__item"> 
-              <div class="td__item">a change in the code</div>
-              <div class="td__item">изменение кода</div>
-              <div class="td__item"></div>
-              <div class="td__item"></div> 
-            </div>
-
-            <div class="tr__item"> 
-              <div class="td__item">back-end</div>
-              <div class="td__item">внутренний</div>
-              <div class="td__item">разработка ПО на стороне сервера</div>
-              <div class="td__item"></div> 
-            </div>
-            
-            <div class="tr__item"> 
-              <div class="td__item">build</div>
-              <div class="td__item">сооружать, строить</div>
-              <div class="td__item">сборка программы из исходного кода</div>
-              <div class="td__item">употребляется как билдить</div> 
-            </div>
-
-            <div class="tr__item"> 
-              <div class="td__item">bootstrap</div>
-              <div class="td__item">фремворк</div>
-              <div class="td__item">5 версий</div>
-              <div class="td__item">чтонибудь еще</div> 
-            </div>
-
-            <div class="tr__item"> 
-              <div class="td__item">commit</div>
-              <div class="td__item">фиксировать</div>
-              <div class="td__item">сохранение, фиксация в репозитории изменений программного кода</div>
-              <div class="td__item">коммит</div> 
-            </div>
-            
-            <div class="tr__item"> 
-              <div class="td__item">compile</div>
-              <div class="td__item">компилировать</div>
-              <div class="td__item">перевод программы с языка программирования на язык, понятный прцессору</div>
-              <div class="td__item">Компилить</div> 
-            </div>
-            
-            <div class="tr__item"> 
-              <div class="td__item">convert</div>
-              <div class="td__item">превращать</div>
-              <div class="td__item">преобразовать, конвертировать</div>
-              <div class="td__item">Конвертить</div> 
-            </div>
-            
-            <div class="tr__item"> 
-              <div class="td__item">customer</div>
-              <div class="td__item">клиент</div>
-              <div class="td__item">заказчик, покупатель (ПО)</div>
-              <div class="td__item"></div> 
-            </div>
-            
-            <div class="tr__item"> 
-              <div class="td__item">debug</div>
-              <div class="td__item">отлаживать</div>
-              <div class="td__item"></div><div class="td__item">употребляется как дебажить</div> 
-            </div>
-
-            <div class="tr__item"> 
-              <div class="td__item">default</div>
-              <div class="td__item">по умолчанию</div>
-              <div class="td__item"></div><div class="td__item"></div> 
-            </div>
-
-            <div class="tr__item"> 
-              <div class="td__item">deploy</div>
-              <div class="td__item">развернуть</div>
-              <div class="td__item">развертывание (установка) программы на сервере</div>
-              <div class="td__item">деплоить</div> 
-            </div>
-            
-            <div class="tr__item"> 
-              <div class="td__item">event</div>
-              <div class="td__item">событие</div>
-              <div class="td__item">Объект event предназначен для получения различной информации о событии в обработчике события. Т.е. позволяет получить элемент, который вызвал обработчик события; элемент, который сгенерировал событие; определить какая была нажата кнопка мыши (для событий связанных с мышью) и многое другое.</div>
-              <div class="td__item"></div> 
-            </div>
-
-            <div class="tr__item"> 
-              <div class="td__item">generate</div>
-              <div class="td__item">порождать, генерировать</div>
-              <div class="td__item">сформировать что-либо (данные, входные параметры, случайные числа и т.д.)</div>
-              <div class="td__item">употребляется как генерить. сгенерить</div> 
-          </div>
-
-          <div class="tr__item"> 
-            <div class="td__item">implement</div>
-            <div class="td__item">осуществлять</div>
-            <div class="td__item">реализовывать какой-либо функционал в программе</div>
-            <div class="td__item">имплементировать</div> 
-          </div>
-          
-          <div class="tr__item"> 
-            <div class="td__item">instance</div>
-            <div class="td__item">экземпляр</div>
-            <div class="td__item">объект конкретного класса</div>
-            <div class="td__item">Инстанс класса</div> 
-          </div>
-          </div>
-        </div>
-      </section>
-      <footer class="footer">
-        <div class="container">
-          <div class="wrap__footer">
-            <div class="footer__item">frontend-traslater</div>
-            <div class="footer__item">&copy 2020</div>
-          </div>
-        </div>
-      </footer>
-  </div>
-  <script>
-let lastResFind=""; // последний удачный результат
-let copy_page=""; // копия страницы в ихсодном виде
-function TrimStr(s) {
-     s = s.replace( /^\s+/g, '');
-  return s.replace( /\s+$/g, '');
-}
-function FindOnPage(inputId) {//ищет текст на странице, в параметр передается ID поля для ввода
-  let obj = window.document.getElementById(inputId);
-  let textToFind;
- 
-  if (obj) {
-    textToFind = TrimStr(obj.value);//обрезаем пробелы
-  } else {
-    alert("Введенная фраза не найдена");
-    return;
-  }
-  if (textToFind == "") {
-    alert("Вы ничего не ввели");
-    return;
-  }
- 
-  if(document.body.innerHTML.indexOf(textToFind)=="-1")
-  alert("Ничего не найдено, проверьте правильность ввода!");
- 
-  if(copy_page.length>0)
-        document.body.innerHTML=copy_page;
-  else copy_page=document.body.innerHTML;
-
- 
-  document.body.innerHTML = document.body.innerHTML.replace(eval("/name="+lastResFind+"/gi")," ");//стираем предыдущие якори для скрола
-  document.body.innerHTML = document.body.innerHTML.replace(eval("/"+textToFind+"/gi"),"<a name="+textToFind+" style='background:red'>"+textToFind+"</a>"); //Заменяем найденный текст ссылками с якорем;
-  lastResFind=textToFind; // сохраняем фразу для поиска, чтобы в дальнейшем по ней стереть все ссылки
-  window.location = '#'+textToFind;//перемещаем скрол к последнему найденному совпадению
- }
-</script>
+         </div>
+         <div class="header__content__wrap">
+             <div class="container">
+                 <div class="header__content__row">
+                     <div class="content__column">
+                         <div class="column__body">
+                             <div class="column__body__text">Интернет-магазин<br>
+                                строительных материалов<br>
+                                и инструментов для ремонта
+                             </div>
+                         </div>
+                     </div>
+                     <div class="content__column">
+                         <div class="column__body__info">
+                             <div class="body__info__phone">
+                                 <i class="fa fa-phone"></i>
+                                 <a href="#" class="phone">+7 (812) 555-05-55</a>
+                             </div>
+                             <div class="body__info__addres">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+                         </div>
+                     </div>
+                     <div class="content__column">
+                         <div class="column__body__form-login">
+                             <button class="button__login">Вход</button>
+                             <button class="button__registr">Регистрация</button>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <nav class="nav">
+             <div class="container">
+                 <ul class="list__menu">
+                     <li class="link__menu"><a href="#" class="link">Главная</a></li>
+                     <li class="link__menu"><a href="#" class="link">Компания</a></li>
+                     <li class="link__menu"><a href="#" class="link">Каталог</a></li>
+                     <li class="link__menu"><a href="#" class="link">Новости</a></li>
+                     <li class="link__menu"><a href="#" class="link">Спецпредложения</a></li>
+                     <li class="link__menu"><a href="#" class="link">Доставка</a></li>
+                     <li class="link__menu"><a href="#" class="link">Контакты</a></li>
+                 </ul>
+             </div>
+         </nav>
+     </header> 
+     <section class="content">
+         <div class="container">
+             <div class="content__pictures__wrap">
+                 <div class="picture materials">
+                     <div class="inside__item">
+                         <div class="inside__title">Материалы</div>
+                         <button class="inside__button">на любой вкус</button>
+                     </div>
+                 </div>
+                 <div class="picture tools">
+                     <div class="inside__item">
+                         <div class="inside__title">Инструмент</div>
+                         <button class="inside__button">НА ВСЕ СЛУЧАИ</button>
+                     </div>
+                 </div>
+                 <div class="picture technik">
+                     <div class="inside__item">
+                         <div class="inside__title">Техника</div>
+                         <button class="inside__button">для стройки</button>
+                     </div>
+                 </div>
+             </div>
+             <div class="content__slider__wrap">
+                 <div class="slider"><img src="images/bosch-top-img.webp" alt=""></div>
+                 <div class="column__picture__wrap">
+                     <div class="picture discounts">
+                         <div class="inside__item">
+                             <div class="inside__title">Скидки 50%</div>
+                             <button class="inside__button">На 350 ТОВАРОВ</button>
+                         </div>
+                     </div>
+                     <div class="picture delivery">
+                         <div class="inside__item">
+                             <div class="inside__title">Доставка</div>
+                             <button class="inside__button">бесплатно</button>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             </div>
+         </div>
+     </section>
+     <footer class="footer"></footer>  
+    </div>
 </body>
 </html>
