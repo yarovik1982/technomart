@@ -220,14 +220,12 @@ body, html{
 }
 .content__pictures__wrap {
 	display: flex;
-	/*padding-left: -20px;*/
-	max-width: 940px;
-	max-height: 409px;
 	justify-content: space-between;
 }
 .picture {
 	width: 300px;
 	height: 123px;
+	position: relative;
 }
 .materials {
 	background-color: #ffbf47; 
@@ -244,6 +242,23 @@ body, html{
 .delivery{
 	margin-top: 20px;
 	background-color: #ffc047;
+}
+.inside__ribbon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60px;
+	height: 59px;
+	background-image: url(../images/ribbon.svg);
+}
+.ribbon__text {
+	color: #ffffff;
+	font-family: "PT Sans - Narrow";
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 12.73px;
+	transform: rotate(45deg);
+	text-align: right;
 }
 .content__slider__wrap {
 	margin-top: 20px;
@@ -278,9 +293,149 @@ body, html{
 	background-color: #000000;
 	opacity: 0.1;
 }
-@media  (max-width : 600px) {
+.icon__jobs {
+	position: absolute;
+	top: 31px;
+	right: 43px;
+}
+.content__baner-panel__wrap {
+	margin-top: 53px;
+}
+.content__baner-panel {
+	display:flex;
+	height: 89px;
+	background-color: #f9f5f0;
+	padding: 0 25px;
+	justify-content: space-between;
+}
+.baner-panel__text {
+	color: #32425c;
+	font-family: Cuprum;
+	font-size: 30px;
+	font-weight: 400;
+	line-height: 89px;
+	text-transform: uppercase;
+}
+.baner-panel__button {
+	align-self: center;
+	width: 253px;
+	height: 38px;
+	background-color: #ee3643;
+	color: #ffffff;
+	font-family: Cuprum;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 38px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.block__product-cards__wrap {
+	margin: 20px 0;
+}
+.container {}
+.block__product-cards__row {
+	display: flex;
+	height: 318px;
+}
+.product-cards__column {
+	position: relative;
+	max-width: 220px;
+	border: 1px solid #eaeaea;
+	margin-right: 20px;
+	
+}
+.inside__ribbon {}
+.ribbon-new {
+	background-image: url(../images/ribbon.svg);
+	
+}
+.product-cards__discribe {
+	align-self: flex-end;
+}
+.product-cards__image {
+	width: 184px;
+	height: 164px;
+}
+.product-cards__title {
+	color: #000000;
+	font-family: "PT Sans";
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 20px;
+	padding: 0 32px;
+	text-align: center;
+}
+.product-cards__strike-text {
+	padding: 18px 70px;
+	color: #a9a9a9;
+	font-family: "PT Sans";
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 18px;
+	text-decoration: line-through;
+	text-transform: uppercase;
+	word-wrap: n
+}
+.last{
+	padding: 18px 75px;
+	color: #fff;
+	font-family: "PT Sans";
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 18px;
+	text-decoration: line-through;
+	text-transform: uppercase;
+}
+.button-price {
+	clip-path: polygon(0% 0%, 85% 0, 100% 50%, 85% 100%, 0% 100%);
+	width: 141px;
+	height: 38px;
+	background-color: #ee3643;
+	color: #ffffff;
+	font-family: "PT Sans";
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 38px;
+	text-transform: uppercase;
+	padding-bottom: 21px;
+	margin-left: 43px;
+}
+
+.partners__icons__wrap {
+	margin-top: 20px;
+}
+.container {}
+.partners__icons__flex {
+	display: flex;
+	/*flex-wrap: wrap;*/
+	align-items: center;
+}
+.icon__item {
+	width: 220px;
+	height: 145px;
+	border: 1px solid #000;
+	/*flex: 1 0 25%;*/
+	margin-right: 20px;
+	line-height: 145px;
+}
+.icon__item img{
+	display: block;
+	margin: auto;
+}
+
+
+
+
+
+
+@media screen and (max-width:600px){  
 	.top__panel__flex{
 		/*display: flex;*/
-		flex-direction: column;
+		/*flex-direction: column;*/
+		display: none;
+		
 	}
-} 
+	.content__pictures__wpap{
+		display: none;
+	}
+}

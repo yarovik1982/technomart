@@ -5,12 +5,17 @@
 @media  (max-width : 1024px) {} 
 @media  (max-width : 800px) {} 
 @media  (max-width : 768px) {} 
-@media  (max-width : 600px) {
+@media screen and (max-width:600px){
 	.top__panel__flex{
 		/*display: flex;*/
-		flex-direction: column;
+		/*flex-direction: column;*/
+		display: none;
+		
 	}
-} 
+	.content__pictures__wpap{
+		display: block;
+	}
+}
 @media  (max-width : 533px) {} 
 @media  (max-width : 360px) {} 
 @media  (max-width : 320px) {} 
